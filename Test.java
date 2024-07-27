@@ -1,6 +1,4 @@
 import java.util.*;
-import java.io.*;
-import java.math.*;
 
 /**
  * Auto-generated code below aims at helping you parse
@@ -15,14 +13,13 @@ public class Test {
         // Write an answer using System.out.println()
         // To debug: System.err.println("Debug messages...");
 
-        if (o.equals("Scissors")) {
-            System.out.println("Stone");
-        }
-        if (in.equals("Stone")) {
-            System.out.println("Hand");
-        }
-        if (in.equals("Hand")) {
-            System.out.println("Scissors");
+        List<String> janken = Arrays.asList("Scissors", "Stone", "Hand", "Serpent", "Spock");
+        if (janken.contains(o)) {
+            if (janken.indexOf(o) == janken.size() - 1){
+                System.out.println(janken.get(0));
+            } else {
+                System.out.println(janken.get(janken.indexOf(o) + 1));
+            }
         } else {
             System.out.println("Error");
         }
