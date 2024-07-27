@@ -13,7 +13,7 @@ public class Test {
         // Write an answer using System.out.println()
         // To debug: System.err.println("Debug messages...");
 
-        List<String> janken = Arrays.asList("Scissors", "Stone", "Hand", "Serpent");
+        List<String> janken = Arrays.asList("Scissors", "Stone", "Hand");
         if (janken.contains(o)) {
             if (janken.indexOf(o) == janken.size() - 1){
                 System.out.println(janken.get(0));
